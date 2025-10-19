@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="A Simulation Framework for Deep Learning-based Lane Change Prediction">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elios-lab.github.io/LaneChangeIntentionRecognitionFramework">
+  <meta property="og:title" content="A Simulation Framework for Lane Change Prediction">
+  <meta property="og:description" content="Deep learning-based lane change prediction in a realistic simulated highway environment.">
+  <meta property="og:image" content="https://elios-lab.github.io/LaneChangeIntentionRecognitionFramework/static/images/workflow.png">
+  <meta property="og:image:width" content="817">
+  <meta property="og:image:height" content="181">
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Driver assistance systems, automated driving, dataset, deep learning, driving simulation, lane change prediction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lane Change Intention Recognition</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">A Simulation Framework for Deep Learning-based Lane Change Prediction</h1>
+            <div class="is-size-4 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Luca Forneris<sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                Riccardo Berta<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Matteo Fresta<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Luca Lazzaroni<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Hadise Rojhan<sup>1</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                Changjae Oh<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Alessandro Pighetti<sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                Fabio Tango<sup>3</sup>,
+              </span>
+              <span class="author-block">
+                and Francesco Bellotti<sup>1</sup>
+              </span>
+            </div>
+
+                  <div class="is-size-6 publication-authors">
+                    <span class="author-block"><sup>1</sup>Department of Electrical, Electronic and Telecommunication Engineering (DITEN), University of Genoa</span>
+                    <span class="author-block"><sup>2</sup>School of Electronic Engineering and Computer Science (EECS), Queen Mary University of London</span><br>
+                    <span class="author-block"><sup>3</sup>Centro Ricerche Fiat (CRF)</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Coming Soon</span>
+                      </a>
+                    </span>
+
+                  <span class="link-block">
+                    <a href="https://doi.org/10.5281/zenodo.16686054" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon ">
+                    <img src="static\images\zenodo-icon-white.ico" alt="Zenodo" style="height: 1.25rem; width: auto;">
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Elios-Lab/LaneChangeIntentionRecognition" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero" style="padding-top: 0;">
+  <div class="container is-max-desktop">
+      <div class="hero-body" style="padding-top: 0; margin-top: 0;padding-bottom: 0;margin-bottom: 0;">
+        <center>
+          <img src="static/images/graphicalabstract.png" width="100%">
+        </center>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            While advanced driving simulations are being increasingly used in automated driving research, free availability of data and development tools is limited. We present a new open-source framework for synthetic data generation for lane change (LC) intention recognition, targeting prediction of time-to-lane-change in highways. The framework – built on the CARLA driving simulator – advances the state-of-the-art by including a 50-driver dataset, a large-scale 3D map and code for reproducibility and new data generation. The map features a 60 km-long highway track, with a variety of curvature radii and straight road segment lengths. The code covers both simulation enhancements (e.g., dedicated traffic management, car cockpit, engine noise) and baseline Deep Learning model training and evaluation (including CARLA log post-processing to create the input timeseries). The dataset captures over 3,400 annotated LC maneuvers with synchronized ego-vehicle dynamics, road geometry, and surrounding traffic context. Baseline evaluations with state-of-the-art deep learning models confirm its suitability for vehicular applications. The whole framework is released publicly to further support automated driving research.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Clip demonstrations -->
+<section class="hero teaser">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-six-fifths" style="margin-top: 2rem;">
+      <h2 class="title is-3">
+        <img id="painting_icon" src="static/images/sample_clip.png" style="margin-right: 0.5rem;">
+        Sample clips
+      </h2>
+    </div>
+  </div>
+  <div class="container is-max-desktop is-centered ">
+    <div class="video-quartet" style="margin-top: 0;">
+      <center style="font-weight: bold; font-size: 1.2em;">Straight Segment</center>
+      <div class="video-row">
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/dmir5.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/dmir7.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="video-row">
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/dmir4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/dmir10.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <center style="font-weight: bold; font-size: 1.2em;">Hazardous Non-Player Vehicle</center>
+    <div class="video-single">
+      <video autoplay muted loop controls playsinline>
+        <source src="static/videos/dmir9.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="video-quartet">
+      <center style="font-weight: bold; font-size: 1.2em;">Curved Segment</center>
+      <div class="video-row">
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/dmir3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/dmir6.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="video-row">
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/dmir1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/dmir12.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End clip demonstration -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Full Drive Video</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <video muted controls playsinline>
+              <source src="static/videos/full_run_dmir.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+<!-- End youtube video -->
+
+<!--BibTex citation
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p style="text-align: center;">
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>. <br>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
