@@ -18,6 +18,8 @@ body {
 
 .footer{
   padding-bottom: 3rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .link-block a {
@@ -119,9 +121,6 @@ body {
     height: 100%;
 }
 
-.publication-body img {
-}
-
 .results-carousel {
   overflow: hidden;
 }
@@ -154,31 +153,78 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   margin: 1rem auto;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .video-single {
   margin: 1rem auto;
-  max-width: 860px;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 .video-col{
-  margin:0 auto;
-  max-width: 420px;
+  margin: 0;
+  flex: 0 1 calc(33.333% - 10px);
+  min-width: 280px;
 }
 
 .video-col,
 .video-single {
   display: flex;
   justify-content: center;
+}
+
+.scenario-selector-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0em auto 1.5em auto;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scenario-selector-wrapper .field {
   width: 100%;
+}
+
+.scenario-selector-wrapper .label {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #363636;
+}
+
+.scenario-selector-wrapper .select {
+  width: 100%;
+}
+
+.scenario-selector-wrapper .select select {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5em 1em;
 }
 
 .video-quartet{
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.video-sextet{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.lane-subsection {
+  margin: 0 auto;
 }
 
 video {

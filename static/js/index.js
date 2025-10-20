@@ -18,4 +18,21 @@ $(document).ready(function() {
 	
     bulmaSlider.attach();
 
+    // Scenario selector functionality
+    $('#scenario-select').on('change', function() {
+        var selectedScenario = $(this).val();
+        
+        // Hide all scenario contents
+        $('.scenario-content').fadeOut(200, function() {
+            $(this).hide();
+        });
+        
+        // Show the selected scenario
+        setTimeout(function() {
+            $('[data-scenario="' + selectedScenario + '"]').fadeIn(200, function() {
+                $(this).show();
+            });
+        }, 150);
+    });
+
 })

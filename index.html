@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="A Simulation Framework for Deep Learning-based Lane Change Prediction">
+  <meta name="description" content="Generation of Synthetic Datasets of Highway Driving Scenarios">
 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://elios-lab.github.io/LaneChangeIntentionRecognitionFramework">
-  <meta property="og:title" content="A Simulation Framework for Lane Change Prediction">
-  <meta property="og:description" content="Deep learning-based lane change prediction in a realistic simulated highway environment.">
-  <meta property="og:image" content="https://elios-lab.github.io/LaneChangeIntentionRecognitionFramework/static/images/workflow.png">
+  <meta property="og:url" content="https://elios-lab.github.io/SyntheticHighwayDataset/">
+  <meta property="og:title" content="Generation of Synthetic Datasets of Highway Driving Scenarios">
+  <meta property="og:description" content="--">
+  <meta property="og:image" content="#">
   <meta property="og:image:width" content="817">
   <meta property="og:image:height" content="181">
 
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Driver assistance systems, automated driving, dataset, deep learning, driving simulation, lane change prediction">
+  <meta name="keywords" content="automated driving, synthetic dataset, deep learning, driving scenario generation, visual systems">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Lane Change Intention Recognition</title>
+  <title>Generation of Synthetic Datasets of Highway Driving Scenarios</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -46,10 +46,10 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">A Simulation Framework for Deep Learning-based Lane Change Prediction</h1>
+            <h1 class="title is-1 publication-title">Generation of Synthetic Datasets of Highway Driving Scenarios</h1>
             <div class="is-size-4 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
+              Authors
+              <!-- <span class="author-block">
                 Luca Forneris<sup>1,2</sup>,
               </span>
               <span class="author-block">
@@ -76,20 +76,20 @@
               </span>
               <span class="author-block">
                 and Francesco Bellotti<sup>1</sup>
-              </span>
+              </span> -->
             </div>
 
                   <div class="is-size-6 publication-authors">
-                    <span class="author-block"><sup>1</sup>Department of Electrical, Electronic and Telecommunication Engineering (DITEN), University of Genoa</span>
+                    Affiliations
+                    <!-- <span class="author-block"><sup>1</sup>Department of Electrical, Electronic and Telecommunication Engineering (DITEN), University of Genoa</span>
                     <span class="author-block"><sup>2</sup>School of Electronic Engineering and Computer Science (EECS), Queen Mary University of London</span><br>
-                    <span class="author-block"><sup>3</sup>Centro Ricerche Fiat (CRF)</span>
+                    <span class="author-block"><sup>3</sup>Centro Ricerche Fiat (CRF)</span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="#" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -99,23 +99,12 @@
                     </span>
 
                   <span class="link-block">
-                    <a href="https://doi.org/10.5281/zenodo.16686054" target="_blank"
+                    <a href="#" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon ">
                     <img src="static\images\zenodo-icon-white.ico" alt="Zenodo" style="height: 1.25rem; width: auto;">
                     </span>
                     <span>Dataset</span>
-                  </a>
-                </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/Elios-Lab/LaneChangeIntentionRecognition" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
                   </a>
                 </span>
             </div>
@@ -126,7 +115,7 @@
   </div>
 </section>
 
-<section class="section hero" style="padding-top: 0;">
+<!-- <section class="section hero" style="padding-top: 0;">
   <div class="container is-max-desktop">
       <div class="hero-body" style="padding-top: 0; margin-top: 0;padding-bottom: 0;margin-bottom: 0;">
         <center>
@@ -135,7 +124,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -145,7 +134,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            While advanced driving simulations are being increasingly used in automated driving research, free availability of data and development tools is limited. We present a new open-source framework for synthetic data generation for lane change (LC) intention recognition, targeting prediction of time-to-lane-change in highways. The framework – built on the CARLA driving simulator – advances the state-of-the-art by including a 50-driver dataset, a large-scale 3D map and code for reproducibility and new data generation. The map features a 60 km-long highway track, with a variety of curvature radii and straight road segment lengths. The code covers both simulation enhancements (e.g., dedicated traffic management, car cockpit, engine noise) and baseline Deep Learning model training and evaluation (including CARLA log post-processing to create the input timeseries). The dataset captures over 3,400 annotated LC maneuvers with synchronized ego-vehicle dynamics, road geometry, and surrounding traffic context. Baseline evaluations with state-of-the-art deep learning models confirm its suitability for vehicular applications. The whole framework is released publicly to further support automated driving research.
+          Driving scenario recognition is a higher order perception task that is getting ever more importance for vehicle context adaptivity, maneuver decision making and validation & verification of automated driving functions (ADFs). However, despite the abundancy of high-quality perception datasets, there is a lack of publicly available video datasets with driving scenario labels. Since simulations are a key asset for AD system development, we propose a system for generating scenario-labeled video-clips from scenario-description distributions. Utilizing the tool, and exploiting configuration data from a large-scale real-world collection, we have built a 9-class dataset, that features a variety of highway driving conditions (trajectories, traffic, weather, time of day) and we release it publicly at: XXX. Results from a classification pipeline that we built exploiting state of the art deep learning models, also including semantic pre-processing, indicate that the task is challenging and should stimulate research on new models, better able to capture the nuances among the patterns characterizing the different classes. From our experience developing the system, we highlight three main factors for efficient creation of synthetic datasets. First, there is a need for a rigorous methodology for modeling scenarios, for which we resorted to Asam OpenSCENARIO 2.0. Second, we needed to enrich a state-of-the-art AD-research simulator, such as CARLA, particularly with behaviors aimed at increasing realism and flexibility, given the need to generate several samples for each scenario type. Finally, simulations should be grounded on meaningful data, that our system uses to configure the dataset creation. We believe that this work can open significant perspectives for future research by extending the proposed approach, improving state of the art scenario recognition models and supporting real-world system development through pre-training, co-training, and fine tuning.
           </p>
         </div>
       </div>
@@ -161,100 +150,602 @@
     <div class="column is-six-fifths" style="margin-top: 2rem;">
       <h2 class="title is-3">
         <img id="painting_icon" src="static/images/sample_clip.png" style="margin-right: 0.5rem;">
-        Sample clips
+        Data samples
       </h2>
     </div>
   </div>
-  <div class="container is-max-desktop is-centered ">
-    <div class="video-quartet" style="margin-top: 0;">
-      <center style="font-weight: bold; font-size: 1.2em;">Straight Segment</center>
-      <div class="video-row">
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/dmir5.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/dmir7.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="video-row">
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/dmir4.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/dmir10.mp4" type="video/mp4">
-          </video>
+  <div class="container is-fluid is-centered ">
+    <!-- Scenario Selector Dropdown -->
+    <div class="scenario-selector-wrapper">
+      <div class="field">
+        <label class="label">Select Scenario:</label>
+        <div class="control">
+          <div class="select is-rounded">
+            <select id="scenario-select">
+              <option value="0">Free Ride</option>
+              <option value="1">Cut In</option>
+              <option value="2">Cut Out</option>
+              <option value="3">Ego Lane Change</option>
+              <option value="4">Follow Lead B1</option>
+              <option value="5">Follow Lead B2</option>
+              <option value="6">Follow Lead B3</option>
+              <option value="7">Follow Lead B4</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
 
-    <center style="font-weight: bold; font-size: 1.2em;">Hazardous Non-Player Vehicle</center>
-    <div class="video-single">
-      <video autoplay muted loop controls playsinline>
-        <source src="static/videos/dmir9.mp4" type="video/mp4">
-      </video>
-    </div>
-
-    <div class="video-quartet">
-      <center style="font-weight: bold; font-size: 1.2em;">Curved Segment</center>
-      <div class="video-row">
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/dmir3.mp4" type="video/mp4">
-          </video>
+    <!-- Video Sextet Containers -->
+    <div class="video-sextet scenario-content" data-scenario="1" style="margin-top: 0; display: none;">
+      <!-- Cut In -->
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em">2 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/2lanes/Cutinfrontsimple1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/2lanes/Cutinfrontsimple2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/2lanes/Cutinfrontsimple3.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/dmir6.mp4" type="video/mp4">
-          </video>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/2lanes/Cutinfrontsimple4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/2lanes/Cutinfrontsimple5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/2lanes/Cutinfrontsimple6.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
-      <div class="video-row">
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/dmir1.mp4" type="video/mp4">
-          </video>
+      
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em; margin-top: 1.5em;">3 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/3lanes/Cutinfrontsimple 3 Corsie 2025-10-18 14 01 26.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/3lanes/Cutinfrontsimple 3 Corsie 2025-10-18 14 02 23.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/3lanes/Cutinfrontsimple 3 Corsie 2025-10-18 14 03 14.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/dmir12.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- End clip demonstration -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Full Drive Video</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <video muted controls playsinline>
-              <source src="static/videos/full_run_dmir.mp4" type="video/mp4">
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/3lanes/Cutinfrontsimple 3 Corsie 2025-10-18 14 03 50.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/3lanes/Cutinfrontsimple 3 Corsie 2025-10-18 14 04 32.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutin/3lanes/Cutinfrontsimple 3 Corsie 2025-10-18 14 05 18.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-</section>
-<!-- End youtube video -->
+
+    <div class="video-sextet scenario-content" data-scenario="2" style="margin-top: 0; display: none;">
+      <!-- Cut Out -->
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.1em; margin-top: 1.5em;">2 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/2lanes/Cutoutfrontsimple 2 Corsie 2025-10-18 13 29 19.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/2lanes/Cutoutfrontsimple 2 Corsie 2025-10-18 13 30 36.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/2lanes/Cutoutfrontsimple 2 Corsie 2025-10-18 13 31 15.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/2lanes/Cutoutfrontsimple 2 Corsie 2025-10-18 13 33 10.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/2lanes/Cutoutfrontsimple 2 Corsie 2025-10-18 13 34 31.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/2lanes/Cutoutfrontsimple 2 Corsie 2025-10-18 13 35 07.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.1em; margin-top: 1.5em;">3 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/3lanes/Cutoutfrontsimple 3 Corsie 2025-10-18 14 06 31.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/3lanes/Cutoutfrontsimple 3 Corsie 2025-10-18 14 07 20.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/3lanes/Cutoutfrontsimple 3 Corsie 2025-10-18 14 09 17.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/cutout/3lanes/Cutoutfrontsimple 3 Corsie 2025-10-18 14 10 12.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-sextet scenario-content" data-scenario="3" style="margin-top: 0; display: none;">
+      <!-- Ego Lane Change -->
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em">2 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/2lanes/Egolanechange 2 Corsie 2025-10-18 14 28 50.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/2lanes/Egolanechange 2 Corsie 2025-10-18 14 30 55.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/2lanes/Egolanechange 2 Corsie 2025-10-18 14 33 14.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/2lanes/Egolanechange 2 Corsie 2025-10-18 14 34 52.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/2lanes/Egolanechange 2 Corsie 2025-10-18 15 19 30.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/2lanes/Egolanechange 2 Corsie 2025-10-18 15 20 23.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em; margin-top: 1.5em;">3 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/3lanes/Egolanechange 3 Corsie 2025-10-18 14 14 58.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/3lanes/Egolanechange 3 Corsie 2025-10-18 14 15 47.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/3lanes/Egolanechange 3 Corsie 2025-10-18 14 16 25.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/3lanes/Egolanechange 3 Corsie 2025-10-18 14 17 15.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/3lanes/Egolanechange 3 Corsie 2025-10-18 14 20 44.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/egoLC/3lanes/Egolanechange 3 Corsie 2025-10-18 14 22 35.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-sextet scenario-content" data-scenario="4" style="margin-top: 0; display: none;">
+      <!-- Follow Lead B1 -->
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em">2 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/2lanes/Followfrontb1 2 Corsie 2025-10-17 19 12 02.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/2lanes/Followfrontb1 2 Corsie 2025-10-17 19 12 47.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/2lanes/Followfrontb1 2 Corsie 2025-10-17 19 12 58.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/2lanes/Followfrontb1 2 Corsie 2025-10-17 19 13 35.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/2lanes/Followfrontb1 2 Corsie 2025-10-17 19 14 24.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/2lanes/Followfrontb1 2 Corsie 2025-10-17 19 14 40.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em; margin-top: 1.5em;">3 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/3lanes/Followfrontb1 3 Corsie 2025-10-18 11 11 03.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/3lanes/Followfrontb1 3 Corsie 2025-10-18 14 48 43.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/3lanes/Followfrontb1 3 Corsie 2025-10-18 14 49 35.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/3lanes/Followfrontb1 3 Corsie 2025-10-18 14 50 09.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/3lanes/Followfrontb1 3 Corsie 2025-10-18 14 50 56.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB1/3lanes/Followfrontb1 3 Corsie 2025-10-18 14 51 37.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-sextet scenario-content" data-scenario="5" style="margin-top: 0; display: none;">
+      <!-- Follow Lead B2 -->
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em">2 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-17 19 16 23.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-17 19 16 31.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-17 19 17 10.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-17 19 17 19.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-17 19 18 10.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-17 19 18 35.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em; margin-top: 1.5em;">3 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/3lanes/Followfrontb2 3 Corsie 2025-10-18 12 30 36.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/3lanes/Followfrontb2 3 Corsie 2025-10-18 14 40 02.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/3lanes/Followfrontb2 3 Corsie 2025-10-18 14 41 37.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/3lanes/Followfrontb2 3 Corsie 2025-10-18 14 43 05.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/3lanes/Followfrontb2 3 Corsie 2025-10-18 14 43 57.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB2/3lanes/Followfrontb2 3 Corsie 2025-10-18 14 45 12.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-sextet scenario-content" data-scenario="6" style="margin-top: 0; display: none;">
+      <!-- Follow Lead B3 -->
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em">2 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/2lanes/Followfrontb3 2 Corsie 2025-10-17 19 19 34.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/2lanes/Followfrontb3 2 Corsie 2025-10-17 19 20 36.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/2lanes/Followfrontb3 2 Corsie 2025-10-17 19 21 07.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/2lanes/Followfrontb3 2 Corsie 2025-10-17 19 21 48.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em; margin-top: 1.5em;">3 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/3lanes/Followfrontb3 3 Corsie 2025-10-18 14 53 08.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/3lanes/Followfrontb3 3 Corsie 2025-10-18 14 54 09.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/3lanes/Followfrontb3 3 Corsie 2025-10-18 14 54 53.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/3lanes/Followfrontb3 3 Corsie 2025-10-18 14 55 35.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/3lanes/Followfrontb3 3 Corsie 2025-10-18 14 56 10.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/3lanes/Followfrontb3 3 Corsie 2025-10-18 14 59 26.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-sextet scenario-content" data-scenario="7" style="margin-top: 0; display: none;">
+      <!-- Follow Lead B4 -->
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em">2 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/2lanes/Followfrontb4 2 Corsie 2025-10-17 19 23 39.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/2lanes/Followfrontb4 2 Corsie 2025-10-17 19 24 02.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/2lanes/Followfrontb4 2 Corsie 2025-10-17 19 24 23.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/2lanes/Followfrontb4 2 Corsie 2025-10-17 19 24 50.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/2lanes/Followfrontb4 2 Corsie 2025-10-17 19 25 09.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/2lanes/Followfrontb4 2 Corsie 2025-10-17 19 53 29.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em; margin-top: 1.5em;">3 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/3lanes/Followfrontb4 3 Corsie 2025-10-18 15 00 24.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/3lanes/Followfrontb4 3 Corsie 2025-10-18 15 01 04.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/3lanes/Followfrontb4 3 Corsie 2025-10-18 15 01 47.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/3lanes/Followfrontb4 3 Corsie 2025-10-18 15 02 54.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/3lanes/Followfrontb4 3 Corsie 2025-10-18 15 06 38.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB4/3lanes/Followfrontb4 3 Corsie 2025-10-18 15 11 21.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-sextet scenario-content" data-scenario="0" style="margin-top: 0; display: block;">
+      <!-- Free Ride -->
+      <center style="font-weight: bold; font-size: 1.2em;">Free Ride</center>
+      <div class="video-row">
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 12 44.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 13 14.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 13 45.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="video-row">
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 14 29.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 15 19.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-col">
+          <video autoplay muted loop controls playsinline>
+            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 16 19.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+<!-- End clip demonstration -->
 
 <!--BibTex citation
   <section class="section" id="BibTeX">
@@ -267,7 +758,7 @@ End BibTex citation -->
 
 
 <footer class="footer">
-  <div class="container">
+  <div class="container is-fluid">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
