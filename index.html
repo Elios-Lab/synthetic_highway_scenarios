@@ -48,42 +48,55 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Generation of Synthetic Datasets of Highway Driving Scenarios</h1>
             <div class="is-size-4 publication-authors">
-              Authors
-              <!-- <span class="author-block">
-                Luca Forneris<sup>1,2</sup>,
+              <span class="author-block">
+                Marianna Cossu<sup>1</sup>,
               </span>
               <span class="author-block">
                 Riccardo Berta<sup>1</sup>,
               </span>
               <span class="author-block">
-                Matteo Fresta<sup>1</sup>,
-              </span>
-              <span class="author-block">
                 Luca Lazzaroni<sup>1</sup>,
               </span>
               <span class="author-block">
-                Hadise Rojhan<sup>1</sup>,
+                Luca Forneris<sup>1,2</sup>,
               </span>
-              <br>
               <span class="author-block">
-                Changjae Oh<sup>2</sup>,
+                Matteo Fresta<sup>1</sup>,
               </span>
               <span class="author-block">
                 Alessandro Pighetti<sup>1,2</sup>,
               </span>
               <span class="author-block">
-                Fabio Tango<sup>3</sup>,
+                Alessandro Pilla<sup>1</sup>,
+              </span>
+              <span class="author-block">
+                Jean-Louis Sauvaget<sup>3</sup>,
+              </span>
+              <span class="author-block">
+                Hind Touil<sup>3</sup>,
+              </span>
+              <span class="author-block">
+                Laurent Durville<sup>4</sup>,
+              </span>
+              <span class="author-block">
+                Thibault Griffon<sup>3</sup>,
+              </span>
+              <span class="author-block">
+                Ghada Ben Nejma<sup>4</sup>,
+              </span>
+              <span class="author-block">
+                Fouad Hadj Selem<sup>4</sup>,
               </span>
               <span class="author-block">
                 and Francesco Bellotti<sup>1</sup>
-              </span> -->
+              </span>
             </div>
 
                   <div class="is-size-6 publication-authors">
-                    Affiliations
-                    <!-- <span class="author-block"><sup>1</sup>Department of Electrical, Electronic and Telecommunication Engineering (DITEN), University of Genoa</span>
+                    <span class="author-block"><sup>1</sup>Department of Electrical, Electronic and Telecommunication Engineering (DITEN), University of Genoa</span>
                     <span class="author-block"><sup>2</sup>School of Electronic Engineering and Computer Science (EECS), Queen Mary University of London</span><br>
-                    <span class="author-block"><sup>3</sup>Centro Ricerche Fiat (CRF)</span> -->
+                    <span class="author-block"><sup>3</sup>Stellantis N.V.</span><br>
+                    <span class="author-block"><sup>4</sup>VEDECOM, mobiLAB</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -134,7 +147,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Driving scenario recognition is a higher order perception task that is getting ever more importance for vehicle context adaptivity, maneuver decision making and validation & verification of automated driving functions (ADFs). However, despite the abundancy of high-quality perception datasets, there is a lack of publicly available video datasets with driving scenario labels. Since simulations are a key asset for AD system development, we propose a system for generating scenario-labeled video-clips from scenario-description distributions. Utilizing the tool, and exploiting configuration data from a large-scale real-world collection, we have built a 9-class dataset, that features a variety of highway driving conditions (trajectories, traffic, weather, time of day) and we release it publicly at: XXX. Results from a classification pipeline that we built exploiting state of the art deep learning models, also including semantic pre-processing, indicate that the task is challenging and should stimulate research on new models, better able to capture the nuances among the patterns characterizing the different classes. From our experience developing the system, we highlight three main factors for efficient creation of synthetic datasets. First, there is a need for a rigorous methodology for modeling scenarios, for which we resorted to Asam OpenSCENARIO 2.0. Second, we needed to enrich a state-of-the-art AD-research simulator, such as CARLA, particularly with behaviors aimed at increasing realism and flexibility, given the need to generate several samples for each scenario type. Finally, simulations should be grounded on meaningful data, that our system uses to configure the dataset creation. We believe that this work can open significant perspectives for future research by extending the proposed approach, improving state of the art scenario recognition models and supporting real-world system development through pre-training, co-training, and fine tuning.
+          Driving scenario recognition is crucial for vehicle context adaptivity, decision-making, and automated driving function validation. However, research in this area is limited by a critical shortage of publicly available, scenario-labeled video datasets. To bridge this gap, we propose a system for generating scenario-labeled synthetic video clips from statistical distributions of traffic datapoints. Leveraging the large-scale, real-world, proprietary MOOVE collection, we generated and publicly released a 9-class dataset featuring varied highway conditions. Based on our experience, key insights for efficient synthetic dataset creation include the necessity of a rigorous scenario-modeling methodology, for which OpenSCENARIO 2.0 was effective, and the need to enrich a simulator like CARLA with behaviors for enhanced realism and scalability to produce thousands of samples for each class. Exploiting the synthesized dataset, we developed a classification framework based on state-of-the-art DL architectures. This approach enabled, to our knowledge, the first documented real-time recognition of a significant set of highway driving scenarios, establishing a novel benchmark in the field. Furthermore, preliminary results to validate the proposed approach are promising: models trained on our synthetically generated videos can effectively process real-world data in real-time. This method, parameterized solely by statistical distributions, leverages a synthesis of field data to create shareable datasets. Thus, it expands the open-source research toolkit, offering significant advantages for both academy and industry by enabling efficient pre-training on synthetic data before fine-tuning on proprietary data for final deployment.
           </p>
         </div>
       </div>
@@ -170,6 +183,7 @@
               <option value="5">Approaching Leading Vehicle</option>
               <option value="6">Following Leading Vehicle</option>
               <option value="7">Following Distant Leading Vehicle</option>
+              <option value="8">Brake</option>
             </select>
           </div>
         </div>
@@ -244,7 +258,7 @@
           </div>
           <div class="video-col">
             <video autoplay muted loop controls playsinline>
-              <source src="static/videos/cutin/3lanes/Cutinfrontsimple 3 Corsie 2025-10-18 14 04 32.mp4" type="video/mp4">
+              <source src="static/videos/cutin/3lanes/Cutinfrontsimple_3Corsie_2025-10-24 16 49 50.mp4" type="video/mp4">
             </video>
           </div>
           <div class="video-col">
@@ -285,7 +299,7 @@
           </div>
           <div class="video-col">
             <video autoplay muted loop controls playsinline>
-              <source src="static/videos/cutout/2lanes/Cutoutfrontsimple 2 Corsie 2025-10-18 13 34 31.mp4" type="video/mp4">
+              <source src="static/videos/cutout/2lanes/Cutoutfrontsimple 2 Corsie 2025-10-24 10 15 42.mp4" type="video/mp4">
             </video>
           </div>
           <div class="video-col">
@@ -488,7 +502,7 @@
         <div class="video-row">
           <div class="video-col">
             <video autoplay muted loop controls playsinline>
-              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-17 19 16 23.mp4" type="video/mp4">
+              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-24 10 54 12 Sun.mp4" type="video/mp4">
             </video>
           </div>
           <div class="video-col">
@@ -515,7 +529,7 @@
           </div>
           <div class="video-col">
             <video autoplay muted loop controls playsinline>
-              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-17 19 18 35.mp4" type="video/mp4">
+              <source src="static/videos/FLFB2/2lanes/Followfrontb2 2 Corsie 2025-10-24 10 56 04 Cloud.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -572,6 +586,11 @@
           </div>
           <div class="video-col">
             <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/2lanes/Followfrontb3 2 Corsie 2025-10-24 11 36 35 Sunset.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
               <source src="static/videos/FLFB3/2lanes/Followfrontb3 2 Corsie 2025-10-17 19 20 36.mp4" type="video/mp4">
             </video>
           </div>
@@ -583,6 +602,11 @@
           <div class="video-col">
             <video autoplay muted loop controls playsinline>
               <source src="static/videos/FLFB3/2lanes/Followfrontb3 2 Corsie 2025-10-17 19 21 48.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/FLFB3/2lanes/Followfrontb3 2 Corsie 2025-10-24 11 26 56 Fog.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -656,7 +680,7 @@
           </div>
           <div class="video-col">
             <video autoplay muted loop controls playsinline>
-              <source src="static/videos/FLFB4/2lanes/Followfrontb4 2 Corsie 2025-10-17 19 25 09.mp4" type="video/mp4">
+              <source src="static/videos/FLFB4/2lanes/Followfrontb4 2 Corsie 2025-10-24 11 52 05 Rain.mp4" type="video/mp4">
             </video>
           </div>
           <div class="video-col">
@@ -706,44 +730,89 @@
       </div>
     </div>
 
-    <div class="video-sextet scenario-content" data-scenario="0" style="margin-top: 0; display: block;">
-      <!-- Free Ride -->
-      <center style="font-weight: bold; font-size: 1.2em;">Free Ride</center>
-      <div class="video-row">
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 12 44.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 13 14.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 13 45.mp4" type="video/mp4">
-          </video>
+    <div class="video-sextet scenario-content" data-scenario="8" style="margin-top: 0; display: none;">
+      <!-- Brake -->
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em">2 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/brake/2lanes/Brake 2Corsie Fog.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/brake/2lanes/Brake 2Corsie Night.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/brake/2lanes/Brake 2Corsie Sunset.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
-      <div class="video-row">
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 14 29.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 15 19.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="video-col">
-          <video autoplay muted loop controls playsinline>
-            <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 16 19.mp4" type="video/mp4">
-          </video>
+      
+      <div class="lane-subsection">
+        <center style="font-weight: bold; font-size: 1.3em; margin-top: 1.5em;">3 Lanes</center>
+        <div class="video-row">
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/brake/3lanes/Brake3corsie Night.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/brake/3lanes/Brake3corsie Rain.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-col">
+            <video autoplay muted loop controls playsinline>
+              <source src="static/videos/brake/3lanes/Brake3corsie Sun.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
+
+  <div class="video-sextet scenario-content" data-scenario="0" style="margin-top: 0; display: block;">
+    <!-- Free Ride -->
+    <center style="font-weight: bold; font-size: 1.2em;">Free Ride</center>
+    <div class="video-row">
+      <div class="video-col">
+        <video autoplay muted loop controls playsinline>
+          <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 12 44.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-col">
+        <video autoplay muted loop controls playsinline>
+          <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 13 14.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-col">
+        <video autoplay muted loop controls playsinline>
+          <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 13 45.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="video-row">
+      <div class="video-col">
+        <video autoplay muted loop controls playsinline>
+          <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 14 29.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-col">
+        <video autoplay muted loop controls playsinline>
+          <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 15 19.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-col">
+        <video autoplay muted loop controls playsinline>
+          <source src="static/videos/freeride/3lanes/Freeridefront 3 Corsie 2025-10-18 15 16 19.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
 
 <!-- End clip demonstration -->
 
